@@ -6,7 +6,7 @@ import os
 
 # --- Define relative paths safely ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Always find path based on current .py location
-MODEL_PATH = os.path.join(BASE_DIR, "best_no_show_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "new_best_no_show_model.pkl")
 ENCODER_PATH = os.path.join(BASE_DIR, "NEW_no_show_encoder.pkl")
 DATA_PATH = os.path.join(BASE_DIR, "NEW_CLEAN_CHLA_clean_data_2024_Appointments.csv")
 
