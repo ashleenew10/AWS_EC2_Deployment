@@ -30,7 +30,12 @@ category_col = ['ZIPCODE', 'CLINIC', 'IS_REPEAT', 'APPT_TYPE_STANDARDIZE',
                 'ETHNICITY_STANDARDIZE', 'RACE_STANDARDIZE']
 
 # --- Expected features in the trained model ---
-expected_features = model.feature_names_in_
+#expected_features = model.feature_names_in_
+expected_features = [
+    "ZIPCODE", "CLINIC", "IS_REPEAT", "APPT_TYPE_STANDARDIZE", 
+    "ETHNICITY_STANDARDIZE", "RACE_STANDARDIZE", "HOUR_OF_DAY",
+    "DAY_OF_WEEK", "LEAD_DAYS", "IS_NEW_PATIENT"
+]
 
 # --- Function to preprocess input data ---
 def preprocess_input(df, encoder_dict):
