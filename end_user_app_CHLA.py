@@ -1,5 +1,6 @@
 import streamlit as st 
 import pickle
+import joblib
 import numpy as np
 import pandas as pd
 import os
@@ -11,8 +12,7 @@ ENCODER_PATH = os.path.join(BASE_DIR, "NEW_no_show_encoder.pkl")
 DATA_PATH = os.path.join(BASE_DIR, "NEW_CLEAN_CHLA_clean_data_2024_Appointments.csv")
 
 # --- Load the trained model ---
-with open(MODEL_PATH, "rb") as file:
-    model = pickle.load(file)  
+model = joblib.load(MODEL_PATH)
 
 # --- Load the encoder dictionary ---
 with open(ENCODER_PATH, "rb") as encoder_file:
